@@ -2,8 +2,55 @@
     display: flex;
     box-shadow: .2em .2em .8em black;
     height: 15em;
+    margin-bottom: 4em;
+    color: rgb(13,26,38);
 }
+
+.card-container:hover{
+    border: 2px solid #9747FF;
+    box-shadow: none;
+}
+
 
 .card-imagem{
     background-position: center;
 }
+
+.card-container-dados{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+.card-titulo{
+    font-weight: bold;
+    padding-bottom: 2em;
+}
+
+.card-nome{
+    text-align: right;
+    font-weight: bold;
+}
+
+.card-duracao, .card-trajeto{
+    color: rgb(92,102,112);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-dif{
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgba(92, 102, 112, 0.5);
+
+    text-align: center;
+    padding: 1px;
+    margin-bottom: 10px;
+}
+
+.link-aval{
+    text-align: center;
+    color: rgb(13,26,38);
+}
+
