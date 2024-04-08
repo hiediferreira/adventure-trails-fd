@@ -1,8 +1,10 @@
 .card-container{
+    /* Contém todo o conteúdo do card*/
     display: flex;
     box-shadow: .2em .2em .8em black;
-    height: 15em;
-    margin-bottom: 4em;
+    min-height: 15em;
+    width: 40em;
+    margin-bottom: 3em; /*Distância entre os cards*/
     color: rgb(13,26,38);
 }
 
@@ -11,21 +13,24 @@
     box-shadow: none;
 }
 
-
 .card-imagem{
+    /* Contém apenas a imagem*/
     background-position: center;
 }
 
 .card-container-dados{
+    /* Contém todo o conteúdo do card (título, informações)*/
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 2em;
+
+    text-align: center;
+    margin: auto;
 }
 
 .card-titulo{
     font-weight: bold;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 
 .card-nome{
@@ -37,6 +42,7 @@
     color: rgb(92,102,112);
     font-weight: bold;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .card-dif{
@@ -49,8 +55,19 @@
     margin-bottom: 10px;
 }
 
-.link-aval{
-    text-align: center;
-    color: rgb(13,26,38);
+.card-aval{
+    /* Contém as estrelas e o link para avaliação*/
+    display: flex;
 }
 
+.estrelas{
+    margin-right: 8px;
+    text-align: left;
+}
+
+.link-aval{
+    text-align: right;
+    color: rgb(13,26,38);
+    text-align: right;
+    margin-left: 50px;
+}
