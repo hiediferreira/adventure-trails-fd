@@ -1,8 +1,18 @@
 /*No index.css também posso declarar as variáveis*/
 
+:root{
+    --marrom: #504908;   
+    --bordaHover: #9747FF;
+    --cinza: rgb(92,102,112);
+    --corFonte: rgb(13,26,38);
+    overflow-x: hidden;
+}
+
 /* Reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
+

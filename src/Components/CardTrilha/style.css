@@ -2,14 +2,14 @@
     /* Contém todo o conteúdo do card*/
     display: flex;
     box-shadow: .2em .2em .8em black;
-    min-height: 15em;
-    width: 40em;
+    min-height: 20em;
+    width: 50em;
     margin-bottom: 3em; /*Distância entre os cards*/
-    color: rgb(13,26,38);
+    color: var(--corFonte);
 }
 
 .card-container:hover{
-    border: 2px solid #9747FF;
+    border: 2px solid var(--bordaHover);
     box-shadow: none;
 }
 
@@ -24,6 +24,7 @@
     flex-direction: column;
     justify-content: space-evenly;
 
+    font-size: 1.2em;
     text-align: center;
     margin: auto;
 }
@@ -39,7 +40,7 @@
 }
 
 .card-duracao, .card-trajeto{
-    color: rgb(92,102,112);
+    color: var(--cinza);
     font-weight: bold;
     margin-bottom: 10px;
     text-align: left;
@@ -67,7 +68,7 @@
 
 .link-aval{
     text-align: right;
-    color: rgb(13,26,38);
+    color: var(--corFonte);
     text-align: right;
     margin-left: 50px;
 }

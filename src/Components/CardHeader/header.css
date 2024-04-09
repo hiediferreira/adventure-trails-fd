@@ -1,0 +1,33 @@
+.header{
+    width: 100vw;
+    height: 350px;
+    background-color: var(--corFonte);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./src/assets/imagem-fundo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+}
+
+nav {
+    height: 80px;
+    width: 100vw;
+    background-color: var(--marrom);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6em;
+    color: white;
+    font-size: 1.1em;
+}
+
+nav a{
+    color: white;
+    padding-left: 3em;
+    opacity: 0.8;
+}
+
+nav a:hover{
+    opacity: 1;
+    font-size: 1.2em;
+}
+
