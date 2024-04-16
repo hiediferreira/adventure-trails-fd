@@ -1,7 +1,6 @@
 import CardTrilha from "./Components/CardTrilha"
 import Header from "./Components/CardHeader/Header.jsx"
 import Footer from "./Components/CardFooter/Footer.jsx"
-
 import "./App.css"
 
 function App() {  
