@@ -1,18 +1,15 @@
-import "./header.css"
+import styles from "./header.module.css"
+import { Link } from "react-router-dom"
 
 function Header(){
     return(
-        <div className="container">
+        <header className={styles.header}>
+            <Link to="/">Adventure Trails FD</Link>                
             <nav>
-                Adventure Trails FD
-                <div>
-                    <a href="#">Explorar Trilhas</a>
-                    <a href="#">Cadastrar Trilhas</a>
-                </div>
+                <Link to="/lista">Explorar Trilhas</Link>
+                <Link to="/cadastro">Cadastrar Trilhas</Link>
             </nav>
-
-            <div className="header"></div>
-        </div>
+        </header>
     )
 }
 export default Header

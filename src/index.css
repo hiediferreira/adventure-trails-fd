@@ -1,5 +1,8 @@
 /*No index.css também posso declarar as variáveis*/
 
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
 :root{
     --marrom: #504908;   
     --bordaHover: #9747FF;
@@ -14,5 +17,10 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.container{
+    padding-top: 6em;
 }
 
