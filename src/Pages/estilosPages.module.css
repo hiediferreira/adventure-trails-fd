@@ -1,0 +1,67 @@
+/* Página Home */
+.imgHome{
+    height: 500px;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/imagem-fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinhamento vertical*/
+    align-items: center;
+}
+
+.pSize{
+    max-width: 700px;
+    margin: 2em 0;
+    text-align: center;
+}
+
+.conteudoHome{
+    margin: 4em;
+}
+
+.margin2em{
+    margin-bottom: 2em;
+}
+
+.cHome1{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.cHome2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.h1Size{
+    max-width: 350px;
+    margin-bottom: 2em;
+}
+
+.imgNatureza{
+    height: 300px;
+    width: 600px;
+}
+
+.linkHome{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+.h1Lista{
+    margin: 1em 0;
+    color: #504908
+}

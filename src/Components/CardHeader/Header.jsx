@@ -4,10 +4,10 @@ import { Link } from "react-router-dom"
 function Header(){
     return(
         <header className={styles.header}>
-            <Link to="/">Adventure Trails FD</Link>                
+            <Link className={styles.linkHome1} to="/">Adventure Trails FD</Link>                
             <nav>
-                <Link to="/lista">Explorar Trilhas</Link>
-                <Link to="/cadastro">Cadastrar Trilhas</Link>
+                <Link  className={styles.linkHeader} to="/lista">Explorar Trilhas</Link>
+                <Link className={styles.linkHeader} to="/cadastro">Cadastrar Trilhas</Link>
             </nav>
         </header>
     )

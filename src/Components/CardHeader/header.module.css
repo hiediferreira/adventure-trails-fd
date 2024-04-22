@@ -10,17 +10,19 @@
     position: fixed;
 }
 
-a{  /* Configurando a tag <Link />*/
-    color: white;    
+.linkHeader{
+    color: white;
+    padding-left: 3em;
     opacity: 0.8;
 }
 
-a:hover{
+.linkHeader:hover, .linkHome1:hover{
     opacity: 1;
     font-size: 1.2em;
 }
 
-nav a{
-    padding-left: 3em;
+.linkHome1{
+    color: white;
+    opacity: 0.8;
 }
 
