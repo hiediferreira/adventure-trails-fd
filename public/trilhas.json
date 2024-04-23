@@ -6,7 +6,7 @@
       "estado": "SC",
       "duracao": 120,
       "trajeto": 5.75,
-      "dificuldade": "Média",
+      "dificuldade": "Iniciante",
       "tipo": "Caminhada",
       "nomeUsuario": "Hiédi",
       "urlImagem": "./src/assets/Costa-lagoa.jpeg"
@@ -17,7 +17,7 @@
       "estado": "SC",
       "duracao": 25,
       "trajeto": 0.7,
-      "dificuldade": "Iniciante",
+      "dificuldade": "Intermediário",
       "tipo": "Caminhada",
       "nomeUsuario": "Hiédi",
       "urlImagem": "./src/assets/trilha-pocao.jpeg"
@@ -28,7 +28,7 @@
       "estado": "SC",
       "duracao": 50,
       "trajeto": 2.5,
-      "dificuldade": "Iniciante",
+      "dificuldade": "Difícil",
       "tipo": "Caminhada",
       "nomeUsuario": "Hiédi",
       "urlImagem": "./src/assets/trilha-ingleses.jpg"

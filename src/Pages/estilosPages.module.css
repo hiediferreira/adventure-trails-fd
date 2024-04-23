@@ -1,4 +1,10 @@
-/* Página Home */
+/* Comum às páginas */
+.h1Principal{
+    margin: 1em 0;
+    color: #504908
+}
+
+/* Página Home*/
 .imgHome{
     height: 500px;
     width: 100vw;
@@ -48,8 +54,52 @@
     width: 600px;
 }
 
-.linkHome{
-    color: white;
+
+/* Página de Cadastro*/
+.containerCadastro{
+    padding: 5em 0 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.inputStyle{   /*Inputs menores*/
+    margin: 0.2em 0 1em 0;
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid #504908;
+}
+
+.inputMaior{ /*Inputs maiores*/
+    margin: 0.2em 0 1em 0;
+    width: 580px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid #504908;
+}
+
+.divCentral{ /*div com 6 inputs menores*/
+    width: 580px;   /*2x 280px + 20px de gap*/
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.flexInput{ /*Label e input com display flex*/
+    display: flex;
+    flex-direction: column;
+}
+
+.msgErro{
+    color:red;
+    font-size: 12px;
+    margin-bottom: 1em;   
 }
 
 
@@ -61,7 +111,4 @@
 
 
 
-.h1Lista{
-    margin: 1em 0;
-    color: #504908
-}
+

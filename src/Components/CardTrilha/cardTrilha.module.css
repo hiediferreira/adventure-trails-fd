@@ -2,7 +2,7 @@
     /* Contém todo o conteúdo do card*/
     display: flex;
     box-shadow: .2em .2em .8em black;
-    min-height: 20em;
+    min-height: 15em;
     width: 50em;
     margin-bottom: 3em; /*Distância entre os cards*/
     color: var(--corFonte);
@@ -47,7 +47,7 @@
 }
 
 .cardDif{
-    width: 100px;
+    width: 160px;
     border-radius: 10px;
     background-color: rgba(92, 102, 112, 0.5);
 

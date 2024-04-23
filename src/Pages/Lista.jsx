@@ -8,7 +8,7 @@ function Lista(){
 
     return(
         <div className="container">
-            <h1 className={styles.h1Lista}>Explore trilhas incríveis</h1>            
+            <h1 className={styles.h1Principal}>Explore trilhas incríveis</h1>            
             {!!trilhas && !isLoading ? (
                 trilhas.map((traill, index) => (
                     <CardTrilha dadosTrilha={traill} key={index} />

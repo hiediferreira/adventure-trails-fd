@@ -1,25 +1,22 @@
 import styles from "./estilosPages.module.css"
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
-import { createTheme, ThemeProvider } from '@mui/material/styles'
 import { Button } from '@mui/material'
+
+import theme from "../Components/Temas/temaPrincipal"
+import { ThemeProvider } from '@mui/material/styles'
 
 
 function Home(){    
+    const navigate = useNavigate()
 
-    const theme = createTheme({
-        palette: {
-            primary: {
-                main: '#504908',
-                contrastText: '#fff',
-            }
-        },
-        typography: {
-            button: {
-                textTransform: "none",  //removendo o upperCase dos botões
-            }
-        }
-    })
+    function goLista(){
+        navigate("/lista")
+    }
+
+    function goCadastro(){
+        navigate("/cadastro")
+    }
 
     return(
         <div className="container">  
@@ -29,7 +26,7 @@ function Home(){
                     Junte-se à comunidade de entusiastas ao ar livre, compartilhe suas aventuras e inspire-se com as experiências de outros aventureiros. <br />Prepare-se para explorar novos horizontes e se conectar com a natureza através do Adventure Trails!
                 </p>
                 <ThemeProvider theme={theme}>
-                    <Button variant="contained" color="primary"><Link className={styles.linkHome} to="/lista">Explorar trilhas</Link></Button>
+                    <Button variant="contained" color="primary" onClick={() => goLista()}>Explorar trilhas</Button>
                 </ThemeProvider>
             </div> 
             <div className={styles.conteudoHome}>
@@ -42,7 +39,7 @@ function Home(){
                     </div>
                     <div>
                         <ThemeProvider theme={theme}>
-                            <Button variant="contained" color="primary" sx={{"mb":8}}><Link to="/lista" className={styles.linkHome}>Explorar trilhas</Link></Button>
+                            <Button variant="contained" color="primary" sx={{"mb":8}} onClick={() => goLista()}>Explorar trilhas</Button>
                         </ThemeProvider>
                     </div>
                 </div>
@@ -51,7 +48,7 @@ function Home(){
                     <div>
                         <h1 className={styles.h1Size}>Compartilhe fotos, dicas e localização das suas trilhas favoritas</h1>
                         <ThemeProvider theme={theme}>
-                            <Button variant="contained" color="primary"><Link className={styles.linkHome} to="/cadastro">Cadastrar nova trilha</Link></Button>
+                            <Button variant="contained" color="primary" onClick={() => goCadastro()}>Cadastrar nova trilha</Button>
                         </ThemeProvider>
                     </div>
                     <div>
