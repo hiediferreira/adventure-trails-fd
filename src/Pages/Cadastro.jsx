@@ -13,6 +13,10 @@ import { useContext } from "react";
 import { TrilhasContext } from "../Context/TrilhasContext";
 
 function Cadastro(){
+    const estados = [
+        'AC','AL', 'AP', 'AM', 'BA', 'CE', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 
+        'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO', 'DF'
+    ]
 
     const navigate = useNavigate()
     function goHome(){
@@ -100,16 +104,9 @@ function Cadastro(){
 
                     <div className={styles.flexInput}>
                         <label htmlFor="estado">Estado</label>
-                        <input className={styles.inputStyle} 
-                            type="text" 
-                            {...register("estado", {
-                            required: "Informe o estado",
-                            maxLength: {value:2, message:"Deve possuir no máximo 2 caracteres"}
-                            })}
-                            placeholder="Digite o estado"
-                        />
-                        {errors?.estado && <p className={styles.msgErro}><WarningAmberIcon fontSize="small" sx={{"mr":1}}/> 
-                            {errors.estado.message}</p>}
+                        <select className={styles.inputStyle} {...register("estado")}>
+                            {estados.map((estadoSelecionado, index) => (<option key={index} value={estadoSelecionado}>{estadoSelecionado}</option>))}
+                        </select>
                     </div>
 
                     <div className={styles.flexInput}>
