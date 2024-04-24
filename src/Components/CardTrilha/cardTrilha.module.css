@@ -1,80 +1,135 @@
-.cardContainer{
-    /* Contém todo o conteúdo do card*/
-    display: flex;
-    box-shadow: .2em .2em .8em black;
-    min-height: 15em;
-    width: 50em;
-    margin-bottom: 3em; /*Distância entre os cards*/
-    color: var(--corFonte);
+@media all{
+    .cardContainer{
+        /* Contém todo o conteúdo do card*/
+        display: flex;
+        box-shadow: .2em .2em .8em black;
+        min-height: 0em;
+        width: 35em;
+        margin-bottom: 2em; /*Distância entre os cards*/
+        color: var(--corFonte);
+    }
+
+    .cardContainer:hover{
+        border: 3px solid var(--bordaHover);
+        box-shadow: none;
+    }
+
+    .cardImagem{
+        /* Contém apenas a imagem*/
+        background-position: center;
+    }
+
+    .cardDados{
+        /* Contém todo o conteúdo do card (título, informações)*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 1em;
+        text-align: center;
+        margin: auto;
+        margin: 0 10px;
+    }
+
+    .cardTitulo{
+        font-weight: bold;
+        padding-bottom: 1em;
+    }
+
+    .cardNome{
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .cardDuracao, .cardTrajeto{
+        color: var(--cinza);
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .cardDif{
+        width: 160px;
+        border-radius: 10px;
+        background-color: rgba(92, 102, 112, 0.5);
+        text-align: center;
+        padding: 1px;
+        margin-bottom: 10px;
+    }
+
+    .cardAval{
+        /* Contém as estrelas e o link para avaliação*/
+        display: flex;
+    }
+
+    .linkAval{
+        text-align: right;
+        color: var(--corFonte);
+        text-align: right;
+        margin-left: 50px;
+    }
+
+    .favButton{
+        border: none;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .estrelas{
+        color: rgb(149, 4, 149);
+        font-size: 18px;
+    }
 }
 
-.cardContainer:hover{
-    border: 4px solid var(--bordaHover);
-    box-shadow: none;
+@media (min-width: 769px){
+    .cardContainer{
+        /* Contém todo o conteúdo do card*/
+        min-height: 0;
+        width: 40em;
+        margin-bottom: 3em; /*Distância entre os cards*/
+    }
+
+    .cardDados{
+        /* Contém todo o conteúdo do card (título, informações)*/
+        font-size: 1.1em;
+    }
+
+    .favButton{
+        font-size: 20px;
+    }
+
+    .estrelas{
+        font-size: 20px;
+    }
 }
 
-.cardImagem{
-    /* Contém apenas a imagem*/
-    background-position: center;
-}
+@media (min-width: 992px){
+    .cardContainer{
+        /* Contém todo o conteúdo do card*/
+        min-height: 15em;
+        width: 50em;
+        margin-bottom: 3em; /*Distância entre os cards*/
+    }
 
-.cardDados{
-    /* Contém todo o conteúdo do card (título, informações)*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    .cardContainer:hover{
+        border: 4px solid var(--bordaHover);
+    }
 
-    font-size: 1.2em;
-    text-align: center;
-    margin: auto;
-}
+    .cardDados{
+        /* Contém todo o conteúdo do card (título, informações)*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
 
-.cardTitulo{
-    font-weight: bold;
-    padding-bottom: 1em;
-}
+        font-size: 1.2em;
+        text-align: center;
+        margin: auto;
+    }
 
-.cardNome{
-    text-align: right;
-    font-weight: bold;
-}
+    .favButton{
+        font-size: 24px;
+    }
 
-.cardDuracao, .cardTrajeto{
-    color: var(--cinza);
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-.cardDif{
-    width: 160px;
-    border-radius: 10px;
-    background-color: rgba(92, 102, 112, 0.5);
-
-    text-align: center;
-    padding: 1px;
-    margin-bottom: 10px;
-}
-
-.cardAval{
-    /* Contém as estrelas e o link para avaliação*/
-    display: flex;
-}
-
-.linkAval{
-    text-align: right;
-    color: var(--corFonte);
-    text-align: right;
-    margin-left: 50px;
-}
-
-.favButton{
-    border: none;
-    font-size: 24px;
-    margin-left: 10px;
-}
-
-.estrelas{
-    color: rgb(149, 4, 149);
-    font-size: 24px;
+    .estrelas{
+        font-size: 24px;
+    }
 }

@@ -1,28 +1,46 @@
-.header{
-    width: 100vw;
-    height: 5em;
-    background-color: var(--marrom);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.1em;
-    padding: 0 6em;
-    position: fixed;
+@media all{
+    .header{
+        width: 100vw;
+        height: 5em;
+        background-color: var(--marrom);
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+    }
+
+    .linkHeader{
+        color: white;
+        padding-left: 1em;
+        opacity: 0.8;
+    }
+
+    .linkHome1{
+        color: white;
+        opacity: 0.8;
+    }
+
+    .linkHeader:hover, .linkHome1:hover{
+        opacity: 1;
+    }
 }
 
-.linkHeader{
-    color: white;
-    padding-left: 3em;
-    opacity: 0.8;
+@media (min-width: 992px){
+    .header{
+        justify-content: space-between;
+        font-size: 1.1em;
+        padding: 0 6em;
+    }
+    
+    .linkHeader{
+        padding-left: 3em;
+    }
+    
+    .linkHeader:hover, .linkHome1:hover{
+        font-size: 1.2em;
+    }
 }
 
-.linkHeader:hover, .linkHome1:hover{
-    opacity: 1;
-    font-size: 1.2em;
-}
 
-.linkHome1{
-    color: white;
-    opacity: 0.8;
-}
 

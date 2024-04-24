@@ -1,26 +1,45 @@
-.footer{
-    background-color: var(--marrom);
-    height: 5em;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 6em;
-    font-size: 1.1em
+@media all{
+    .footer{
+        background-color: var(--marrom);
+        height: 5em;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 3em;
+        font-size: 1em
+    }
+
+    .footerIcons { /* Configurando a tag <Link />*/
+        color: white;
+        padding-left: 1em;
+        opacity: 0.8;
+    }
+
+    .footerIcons:hover, .iconHome2:hover{
+        opacity: 1;
+    }
+
+    .iconHome2 { 
+        opacity: 0.8;
+        color: white;
+    }
+
 }
 
-.footerIcons { /* Configurando a tag <Link />*/
-    color: white;
-    padding-left: 3em;
-    opacity: 0.8;
-}
 
-.footerIcons:hover, .iconHome2:hover{
-    opacity: 1;
-    font-size: 1.2em;;
-}
+@media (min-width: 992px) {
+    .footer{
+        justify-content: space-between;
+        padding: 0 6em;
+        font-size: 1.1em
+    }
 
-.iconHome2 { 
-    opacity: 0.8;
-    color: white;
+    .footerIcons { /* Configurando a tag <Link />*/
+        padding-left: 3em;
+    }
+
+    .footerIcons:hover, .iconHome2:hover{
+        font-size: 1.2em;;
+    }
 }

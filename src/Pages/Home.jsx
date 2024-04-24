@@ -31,7 +31,7 @@ function Home(){
             </div> 
             <div className={styles.conteudoHome}>
                 <div className={styles.cHome1}>
-                    <div>
+                    <div className={styles.cHome1Config}>
                         <h1 className={styles.margin2em}>Explore trilhas incríveis</h1>
                         <p className={styles.margin2em}>
                             O "Adventure Trails FD" é seu portal para explorar e compartilhar as melhores trilhas para trekking e ciclismo ao redor do mundo. Descubra rotas deslumbrantes, desde caminhos tranquilos por florestas exuberantes até trilhas desafiadoras em montanhas majestosas. Encontre informações detalhadas sobre cada trilha, incluindo distância, dificuldade, pontos de interesse naturais e dicas úteis para uma experiência eco-friendly.

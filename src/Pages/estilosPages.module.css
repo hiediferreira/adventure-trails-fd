@@ -1,106 +1,200 @@
-/* Comum às páginas */
-.h1Principal{
+@media all{
+    /* Comum às páginas */
+    .h1Principal{
     margin: 1em 0;
     color: #504908
+    }
+
+    /* Página Home*/
+    .imgHome{
+        height: 400px;
+        width: 100vw;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/imagem-fundo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Alinhamento vertical*/
+        align-items: center;
+    }
+
+    .imgHome>h1{
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .pSize{
+        max-width: 400px;
+        margin: 2em 0;
+        text-align: center;
+    }
+
+    .conteudoHome{
+        margin: 2em;
+    }
+
+    .cHome1{
+        /*Contém h1, p e botão*/
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cHome1Config>p{
+        /*Contém h1 e p*/        
+        max-width: 580px;
+    }
+
+    .margin2em{               
+        margin-bottom: 1em;
+    }
+
+    .cHome2{
+        /*Contém h1, botão e imagem*/ 
+        display: flex;
+        flex-direction: column;
+        max-width: 580px;
+        text-align: center;
+    }
+
+    .h1Size{
+        margin-bottom: 1em;
+    }
+
+    .imgNatureza{
+        height: 260px;
+        width: 560px;
+        margin-top: 2em;
+    }
+
+    /* Página de Cadastro*/
+    .containerCadastro{
+        padding: 5em 0 2em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .inputStyle{   /*Inputs menores*/
+        margin: 0.2em 0 1em 0;
+        width: 240px;
+        height: 30px;
+        border-radius: 5px;
+        padding-left: 10px;
+        border: 1px solid #504908;
+    }
+
+    .inputMaior{ /*Inputs maiores*/
+        margin: 0.2em 0 1em 0;
+        width: 500px;
+        height: 30px;
+        border-radius: 5px;
+        padding-left: 10px;
+        border: 1px solid #504908;
+    }
+
+    .divCentral{ /*div com 6 inputs menores*/
+        width: 500px;   /*2x 240px + 20px de gap*/
+        display: grid;
+        grid-template-columns: 240px 240px;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    .flexInput{ /*Label e input com display flex*/
+        display: flex;
+        flex-direction: column;
+    }
+
+    .msgErro{
+        color:red;
+        font-size: 10px;
+        margin-bottom: 1em;   
+    }
 }
 
-/* Página Home*/
-.imgHome{
-    height: 500px;
-    width: 100vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/imagem-fundo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Alinhamento vertical*/
-    align-items: center;
+@media (min-width: 992px){
+    /* Página Home*/
+    .imgHome{
+        height: 500px;
+    }
+
+    .pSize{
+        max-width: 700px;
+        margin: 2em 0;
+    }
+
+    .imgHome>h1{
+        max-width: 500px;
+    }
+
+    .conteudoHome{
+        margin: 4em;
+    }
+
+    .margin2em{
+        margin-bottom: 2em;
+    }
+
+    .cHome1{
+        /*Contém h1, p e botão*/
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+    }
+
+    .cHome1Config>p{
+        max-width: 100vw;
+        text-align: center;
+    }
+
+    .cHome2{
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 100vw;
+        text-align: left;
+    }
+
+    .h1Size{
+        max-width: 400px;
+        margin: 0 0 2em 0;
+    }
+
+    .imgNatureza{
+        height: 300px;
+        width: 600px;
+        margin-top: 0;
+    }   
+
+
+    /* Página de Cadastro*/
+    .inputStyle{   /*Inputs menores*/
+        width: 280px;
+        height: 40px;
+    }
+
+    .inputMaior{ /*Inputs maiores*/
+        width: 580px;
+        height: 40px;
+    }
+
+    .divCentral{ /*div com 6 inputs menores*/
+        width: 580px;   /*2x 280px + 20px de gap*/
+        grid-template-columns: 280px 280px;
+    }
+
+    .msgErro{
+        font-size: 12px;
+    }
 }
 
-.pSize{
-    max-width: 700px;
-    margin: 2em 0;
-    text-align: center;
-}
 
-.conteudoHome{
-    margin: 4em;
-}
-
-.margin2em{
-    margin-bottom: 2em;
-}
-
-.cHome1{
-    display: flex;
-    flex-direction: column;    
-    align-items: center;
-}
-
-.cHome2{
-    display: flex;
-    justify-content: space-between;
-}
-
-.h1Size{
-    max-width: 350px;
-    margin-bottom: 2em;
-}
-
-.imgNatureza{
-    height: 300px;
-    width: 600px;
-}
-
-
-/* Página de Cadastro*/
-.containerCadastro{
-    padding: 5em 0 2em 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-}
-
-.inputStyle{   /*Inputs menores*/
-    margin: 0.2em 0 1em 0;
-    width: 280px;
-    height: 40px;
-    border-radius: 5px;
-    padding-left: 10px;
-    border: 1px solid #504908;
-}
-
-.inputMaior{ /*Inputs maiores*/
-    margin: 0.2em 0 1em 0;
-    width: 580px;
-    height: 40px;
-    border-radius: 5px;
-    padding-left: 10px;
-    border: 1px solid #504908;
-}
-
-.divCentral{ /*div com 6 inputs menores*/
-    width: 580px;   /*2x 280px + 20px de gap*/
-    display: grid;
-    grid-template-columns: 280px 280px;
-    grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 20px;
-}
-
-.flexInput{ /*Label e input com display flex*/
-    display: flex;
-    flex-direction: column;
-}
-
-.msgErro{
-    color:red;
-    font-size: 12px;
-    margin-bottom: 1em;   
-}
 
 
 
