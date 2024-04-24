@@ -9,7 +9,7 @@
       "dificuldade": "Iniciante",
       "tipo": "Caminhada",
       "nomeUsuario": "Hiédi",
-      "urlImagem": "../assets/Costa-lagoa.jpeg"
+      "urlImagem": "/Costa-lagoa.jpeg"
     },
     {
       "nomeTrilha": "Trilha do Poção",
@@ -20,7 +20,7 @@
       "dificuldade": "Intermediário",
       "tipo": "Caminhada",
       "nomeUsuario": "Hiédi",
-      "urlImagem": "../assets/trilha-pocao.jpeg"
+      "urlImagem": "/trilha-pocao.jpeg"
     },
     {
       "nomeTrilha": "Trilha do Canto dos Ingleses",
@@ -31,7 +31,7 @@
       "dificuldade": "Difícil",
       "tipo": "Caminhada",
       "nomeUsuario": "Hiédi",
-      "urlImagem": "../assets/trilha-ingleses.jpg"
+      "urlImagem": "/trilha-ingleses.jpg"
     },
     {
       "nomeTrilha": "Trilha da costa da Lagoa",
