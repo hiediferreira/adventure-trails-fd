@@ -52,7 +52,7 @@ function Home(){
                         </ThemeProvider>
                     </div>
                     <div>
-                        <img className={styles.imgNatureza} src="./src/assets/img-natureza.jpg" alt="imagem ilustrativa"/>
+                        <img className={styles.imgNatureza} src="../assets/img-natureza.jpg" alt="imagem ilustrativa"/>
                     </div>                    
                 </div>
             </div>
