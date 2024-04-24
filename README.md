@@ -22,15 +22,12 @@ Neste projeto, pudemos praticar os conteúdos aprendidos no decorrer do curso, c
 - CSS modules;
 - Material UI.
 
-## Imagem da tela inicial da aplicação 
+## Imagens da aplicação 
+### Tela inicial
   ![image](https://github.com/hiediferreira/adventure-trails-fd/assets/150954299/338fdef4-e210-4bc8-8b25-a485f65b798b)
+  
+### Tela de listagem das trilhas cadastradas
+  ![image](https://github.com/hiediferreira/adventure-trails-fd/assets/150954299/3ce71023-17bc-4c2a-8680-1bd514e4b5d8)
 
-
-
-
-
-
-
-
-
-
+### Tela de cadastro de nova trilha
+  ![image](https://github.com/hiediferreira/adventure-trails-fd/assets/150954299/fd488d8e-9bae-4172-9ae2-0fb086b6a7c6)
